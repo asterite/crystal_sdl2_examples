@@ -1,0 +1,13 @@
+name: crystal_sdl2_examples
+version: 0.1.0
+
+authors:
+  - Ary Borenszweig <asterite@gmail.com>
+
+dependencies:
+  sdl:
+    github: ysbaddaden/sdl.cr
+
+crystal: 0.30.1
+
+license: MIT
