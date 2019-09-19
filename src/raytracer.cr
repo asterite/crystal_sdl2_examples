@@ -224,14 +224,9 @@ quit = false
 while true
   SDL::Event.poll do |event|
     case event
-    when SDL::Event::Quit
+    when SDL::Event::Quit, SDL::Event::Keyboard
       quit = true
       break
-    when SDL::Event::Keyboard
-      if event.sym.q?
-        quit = true
-        break
-      end
     end
   end
 
