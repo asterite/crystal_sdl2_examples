@@ -125,7 +125,7 @@ puts "Rects: #{rects.size}"
 while true
   SDL::Event.poll do |event|
     case event
-    when SDL::Event::Quit, SDL::Event::Keyboard
+    when SDL::Event::Quit
       ms = SDL.ticks - start
       puts "#{frames} frames in #{ms} ms"
       puts "Average FPS: #{frames / (ms * 0.001)}"
