@@ -224,7 +224,7 @@ quit = false
 while true
   SDL::Event.poll do |event|
     case event
-    when SDL::Event::Quit, SDL::Event::Keyboard
+    when SDL::Event::Quit
       quit = true
       break
     end
